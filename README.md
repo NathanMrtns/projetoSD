@@ -29,3 +29,12 @@ kubectl get svc name_of_service
 
 # Deploy
 kubectl apply -f blue.yaml
+
+# Setar autoscale
+kubectl autoscale deployment nome_do_deployment --cpu-percent=50 --min=1 --max=10
+
+## listar autoscaler
+kubectl get hpa
+
+## listar pods
+kubectl get pod

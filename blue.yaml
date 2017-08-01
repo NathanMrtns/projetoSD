@@ -11,7 +11,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: nathanmrtns/projetosd:v1
+      - image: nathanmrtns/projetosd:v2
         name: projetosd
         ports:
         - containerPort: 80
