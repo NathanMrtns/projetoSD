@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: projetosd-blue
+spec:
+  replicas: 6
+  template:
+    metadata:
+      labels:
+        type: projetosd
+        color: blue
+    spec:
+      containers:
+      - image: nathanmrtns/projetosd:v1
+        name: projetosd
+        ports:
+        - containerPort: 80
+          name: http-server
