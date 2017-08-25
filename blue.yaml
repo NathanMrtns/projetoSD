@@ -3,12 +3,11 @@ kind: Deployment
 metadata:
   name: projetosd-blue
 spec:
-  replicas: 6
+  replicas: 12
   template:
     metadata:
       labels:
         type: projetosd
-        color: blue
     spec:
       containers:
       - image: nathanmrtns/projetosd:v2
