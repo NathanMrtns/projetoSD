@@ -1,5 +1,6 @@
 
-# Dockerizando o servidor
+# Learning Kubernetes - Dockerizing the server
+Project made for learning kubernetes basics.
 
 ## Cria as imagens e tags
 1. $ docker build -t nome_imagem:tag_imagem .
